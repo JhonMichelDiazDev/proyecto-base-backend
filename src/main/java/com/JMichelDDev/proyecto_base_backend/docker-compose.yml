@@ -1,0 +1,16 @@
+#version: '3.8'
+services:
+  postgres:
+    image: postgres:14            # Utilizamos la versión 14 de PostgreSQL (puedes ajustar según tus necesidades)
+    restart: always
+    environment:
+      POSTGRES_DB: proyecto_base_BD     # Nombre de la base de datos que se creará
+      POSTGRES_USER: michel_diaz     # Usuario de PostgreSQL
+      POSTGRES_PASSWORD: proyecto_base  # Contraseña para el usuario
+    ports:
+      - "5432:5432"                # Expone el puerto 5432 en el host
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # Almacena los datos en un volumen para persistencia
+
+volumes:
+  pgdata:
