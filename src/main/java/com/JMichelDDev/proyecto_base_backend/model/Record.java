@@ -3,7 +3,8 @@ package com.JMichelDDev.proyecto_base_backend.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 @Data
 @Entity

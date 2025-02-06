@@ -1,7 +1,8 @@
 // src/main/java/com/tuempresa/proyecto/dto/AuthRequest.java
 package com.JMichelDDev.proyecto_base_backend.dto;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
+
 
 public class AuthRequest {
   
